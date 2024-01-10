@@ -1,20 +1,20 @@
 const booking_ids = [
   {
-    booking_id: "",
+    booking_id: 11,
     hall_id: 1,
-    booked_at: ["start time", "end time"],
+    booked_at: ["2 jan 2023 6.30pm", "4 jan 2023 11.30pm"],
     customer_id: 1,
   },
   {
-    booking_id: "",
+    booking_id: " ",
     hall_id: 2,
-    booked_at: ["start time", "end time"],
+    booked_at: [],
     customer_id: 1,
   },
   {
-    booking_id: "",
+    booking_id: 13,
     hall_id: 3,
-    booked_at: ["start time", "end time"],
+    booked_at: ["17 Jul 2023 9.30am", "18 jul 2023 10.30pm"],
     customer_id: 1,
   },
 ];
@@ -22,8 +22,8 @@ const booking_ids = [
 const customer_ids = [
   {
     customer_id: 1,
-    customer_name: "name",
-    customer_address: "address",
+    customer_name: "sree",
+    customer_address: "coimbatore city",
     booked_id:'',
   },
 ];
@@ -34,47 +34,47 @@ const hall_ids = [
   {
     hall_id: 1,
     available_now:false,
-    hall_size: "w*l*b",
-    stage_size: "w*l*b",
+    hall_size: "10*10*10",
+    stage_size: "8*8*8",
     seats: 50,
     price_per_hour: "1500",
-    Address: "address",
+    Address: "a1",
   },
   {
     hall_id: 2,
     available_now:false,
-    hall_size: "w*l*b",
-    stage_size: "w*l*b",
+    hall_size: "11*11*11",
+    stage_size: "9*9*9",
     seats: 50,
     price_per_hour: "1500",
-    Address: "address",
+    Address: "a2",
   },
   {
     hall_id: 3,
     available_now:false,
-    hall_size: "w*l*b",
-    stage_size: "w*l*b",
+    hall_size: "12*12*12",
+    stage_size: "10*10*10",
     seats: 50,
     price_per_hour: "1500",
-    Address: "address",
+    Address: "a3",
   },
   {
     hall_id: 4,
     available_now:false,
-    hall_size: "w*l*b",
-    stage_size: "w*l*b",
+    hall_size: "10*10*10",
+    stage_size: "8*8*8",
     seats: 50,
     price_per_hour: "1500",
-    Address: "address",
+    Address: "a4",
   },
   {
     hall_id: 5,
     available_now:false,
-    hall_size: "w*l*b",
-    stage_size: "w*l*b",
+    hall_size: "15*15*15",
+    stage_size: "6*6*6",
     seats: 80,
     price_per_hour: "3000",
-    Address: "address",
+    Address: "a5",
   },
 ];
 
@@ -130,20 +130,20 @@ setInterval(() => {
     })
    }, 60000 * 30);
 
-const booking_history = [
-  {
-    customer_id: 1,
-    booked_lists: [
-      {
-        hall_id: 1,
-        booking_id: "booking_id",
-        booking_status: "",
-        start_time: "start time",
-        end_time: "end time",
-      },
-        ],
-  },
-];
+   const booking_history = [
+    {
+      customer_id: 1,
+      booked_lists: [
+        {
+          hall_id: 1,
+          booking_id: 11,
+          booking_status: "Yes",
+          start_time: "2 jan 2023 6.30pm",
+          end_time: "4 jan 2023 11.30pm",
+        },
+          ],
+    },
+  ];
 
 module.exports = {
   booking_ids,
